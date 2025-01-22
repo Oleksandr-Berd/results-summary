@@ -13,26 +13,55 @@ export const ResultsCon = styled.div`
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
 
+  @media (min-width: 1280px) {
+    width: 266px;
+
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 38px;
+    padding-bottom: 46px;
+
+    border-radius: 32px;
+
+    transform: translateX(32px);
+  }
+
   & h3 {
     margin-bottom: 24px;
 
     font-weight: 700;
     color: #cac9ff;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 36px;
+
+      font-size: 24px;
+    }
   }
 
   & h5 {
+    margin-bottom: 8px;
+
     font-size: 24px;
     font-weight: 700;
 
-    margin-bottom: 8px;
-
     color: #fff;
+
+    @media (min-width: 1280px){
+        margin-bottom: 16px;
+
+        font-size: 32px;
+    }
   }
 
   & p {
     font-size: 16px;
 
     color: #cac9ff;
+
+    @media (min-width: 1280px){
+        font-size: 18px;
+    }
   }
 `;
 
@@ -50,10 +79,21 @@ export const Circle = styled.div`
 
   border-radius: 50%;
 
+  @media (min-width: 1280px){
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 28px;
+  }
+
   & > h4 {
     font-size: 40px;
 
     color: #fff;
+
+    @media (min-width: 1280px){
+        font-size: 56px;
+    }
   }
 
   

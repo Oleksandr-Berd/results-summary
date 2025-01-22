@@ -8,6 +8,20 @@ export const SummaryCon = styled.div`
 
   text-align: left;
   font-family: "HankenGrotesk";
+
+  background-color: #fff;
+
+  @media (min-width: 1280px) {
+    width: 266px;
+
+    padding-left: 72px;
+    padding-right: 40px;
+    padding-top: 38px;
+    padding-bottom: 32px;
+
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
   & > h3 {
     margin-left: 2px;
     margin-bottom: 24px;
@@ -15,6 +29,12 @@ export const SummaryCon = styled.div`
     font-size: 18px;
     font-weight: 700;
     color: #303b59;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 28px;
+
+      font-size: 24px;
+    }
   }
 `;
 
@@ -52,6 +72,12 @@ export const ListItem = styled.li`
 
   border-radius: 12px;
 
+  @media (min-width: 1280px){
+margin-bottom: 41px;
+
+    font-size: 18px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -88,4 +114,13 @@ export const Button = styled.button`
   font-weight: 700;
 
   border-radius: 128px;
+
+  transition: background-color 1s linear;
+  &:hover,
+  &:focus,
+  &:active {
+    background: linear-gradient(to bottom, #7755ff, #6943ff, #2f2ce9);
+
+    cursor: pointer;
+  }
 `;

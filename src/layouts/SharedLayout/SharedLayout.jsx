@@ -1,8 +1,10 @@
-const SharedLayout = ({children}) => {
+import * as SC from "./SharedLayoutStyled"
+
+const SharedLayout = ({ children }) => {
     return ( 
-        <div>
+        <SC.SharedLayoutStyled>
             {children}
-        </div>
+        </SC.SharedLayoutStyled>
      );
 }
  
